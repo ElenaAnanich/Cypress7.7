@@ -1,0 +1,9 @@
+{ 
+"title": ".page-header__title",
+"daysWeek": ".page-nav__day",
+"chooseFilm": ".movie",
+"chooseTimeSession": "a.page-nav__day:nth-of-type(4)",
+"chooseChair": ".buying-scheme__wrapper > :nth-child(5) > :nth-child(5)",
+"pushButton": "Забронировать",
+"Buttonbooking" : "Получить код бронирования"
+}
