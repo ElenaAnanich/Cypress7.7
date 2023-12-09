@@ -14,5 +14,4 @@ it("Should successfully login admin", () => {
   cy.url().should('include', '/client/payment.php')
   cy.contains(selector.Buttonbooking).click();
   cy.contains(store.takeTicket).should("be.visible");
-  
 });
