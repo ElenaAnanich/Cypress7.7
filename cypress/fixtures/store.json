@@ -1,8 +1,8 @@
 {
-    "deskForEqual": "Управление залами",
+    "deskForEqual": "Сетка сеансов",
     "mistakeForEqual": "Ошибка авторизации!",
     "nameHall": "data.newHall",
-    "timeSession": "11:00",
-    "timeSessionForEqual": "Начало сеанса: 11:00",
+    "timeSession": "17:00",
+    "timeSessionForEqual": "Начало сеанса: 17:00",
     "takeTicket": "Электронный билет"
 }
