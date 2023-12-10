@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:api": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --ci-build-id 12",
+    "test:ui": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --ci-build-id 12",
+    "test:parallel": "run-p -c test:api test:ui"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.5.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
