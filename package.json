@@ -5,9 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:api": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --ci-build-id 12",
-    "test:ui": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --ci-build-id 12",
-    "test:parallel": "run-p -c test:api test:ui"
+    "test:api:chrome": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --browser chrome",
+    "test:ui:chrome": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --browser chrome ",
+    "test:parallel:chrome": "run-p -c test:api:chrome test:ui:chrome",
+    "test:api:firefox": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --browser firefox",
+    "test:ui:firefox": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --browser firefox ",
+    "test:parallel:firefox": "run-p -c test:api:firefox test:ui:firefox",
+    "test:api:electron": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --browser electron",
+    "test:ui:electron": "cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --browser electron ",
+    "test:parallel:electron": "run-p -c test:api:electron test:ui:electron"
   },
   "author": "",
   "license": "ISC",
