@@ -4,7 +4,7 @@
 "chooseFilm": ".movie",
 "chooseTimeSession": "a.page-nav__day:nth-of-type(7)",
 "chooseFilms": ":nth-child(2) > .movie__info > .movie__description > .movie__title",
-"chooseChair": ".buying-scheme__wrapper > :nth-child(6) > :nth-child(3)",
+"chooseChair": ".buying-scheme__wrapper > :nth-child(6) > :nth-child(6)",
 "pushButton": "Забронировать",
 "Buttonbooking" : "Получить код бронирования"
 }
