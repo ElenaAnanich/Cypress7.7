@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:api:chrome": "npx cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --browser chrome",
-    "test:ui:chrome": "npx cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --browser chrome",
-    "test:parallel:chrome": "run-p -c test:api:chrome test:ui:chrome ",
+    "test:api:firefox": "npx cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --browser firefox",
+    "test:ui:firefox": "npx cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --browser firefox",
+    "test:parallel:firefox": "run-p -c test:api:firefox test:ui:firefox ",
     "test:api:electron": "npx cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group api --spec \"cypress/e2e/login.cy.js\" --browser electron",
     "test:ui:electron": "npx cypress run --record --key 7a708cb1-16fb-4267-b88f-ae5bb4b9c537 --group ui --spec \"cypress/e2e/main.cy.js\" --browser electron",
     "test:parallel:electron": "run-p -c test:api:electron test:ui:electron ",
